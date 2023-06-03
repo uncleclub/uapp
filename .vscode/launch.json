@@ -4,7 +4,18 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "name": "Deploy Cloud Function",
+            "type": "cloudcode.cloudfunctions",
+            "request": "launch",
+            "functionName": "uapp",
+            "gen": "GEN_2",
+            "revision": "",
+            "entryPoint": "helloWorld",
+            "testInput": "unclesay",
+            "region": "asia-southeast1",
+            "runtime": "nodejs18"
+        },
         {
             "name": "Cloud Run: Run/Debug Locally",
             "type": "cloudcode.cloudrun",
